@@ -37,19 +37,25 @@ R: Reinicio del juego al ganar
 ### Outputs
 
 
-Cambio de símbolos: 🍒, 💎, ⭐, ❤️, 🔔
+#### Cambio de símbolos: 🍒, 💎, ⭐, ❤️, 🔔
 
-![s](imagenes/fin.jpg)
+![s](imagenes/simbolos.jpg)
 
 
-Puntaje: Hasta 5 puntos
-Mensaje JACKPOT+sonido: Al ganar un punto
-Pantalla final: Cuando ganas los 5 puntos
+#### Puntaje: Hasta 5 puntos
 
-Presionar ENTER
-Se generan tres símbolos aleatorios
-El programa compara los símbolos
-¿Son iguales?
-Sí = suma punto + Activa sonido + Muestra JACKPOT
-¿Tiene 5 puntos?
-Sí = cambia al estado final
+Presionar ENTER -> Se generan tres símbolos aleatorios -> El programa compara los símbolos -> ¿Son iguales? -> Sí = suma punto + Activa sonido + Muestra JACKPOT -> ¿Tiene 5 puntos? -> Sí = cambia al estado final
+
+![R](imagenes/resultado.jpg)
+
+#### Mensaje JACKPOT+sonido: Al ganar un punto
+
+Para indicar visualmente cuándo el jugador obtiene un punto, implementé la variable booleana llamada "jackpot". Esto actua cuando los tres símbolos de la tragamonedas coinciden y se activa la función "verificarResultado()" cambiando el valor de esta variable a "true", sumando un punto al puntaje total y reproduce un sonido de victoria.
+
+Posteriormente, durante la ejecución de "pantallaJuego()", se evalúa la condición "if (jackpot)". Si es verdadera, el sistema muestra el mensaje "JACKPOT +1" en pantalla utilizando distintos atributos gráficos como color, contorno y tamaño de texto.
+
+Además, hice uso de la función "millis()" para registrar el momento exacto en que ocurre la victoria. Comparando el tiempo actual con el tiempo almacenado en "tiempoJackpot", el mensaje permanece visible durante 2000 milisegundos (2 segundos). Una vez transcurrido ese tiempo, la variable "jackpot" vuelve a "false", ocultando automáticamente el mensaje.
+
+Este mecanismo permite generar una respuesta visual temporal que informa claramente al usuario cuando obtiene una combinación ganadora.
+
+
