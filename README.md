@@ -56,6 +56,10 @@ Posteriormente, durante la ejecución de "pantallaJuego()", se evalúa la condic
 
 Además, hice uso de la función "millis()" para registrar el momento exacto en que ocurre la victoria. Comparando el tiempo actual con el tiempo almacenado en "tiempoJackpot", el mensaje permanece visible durante 2000 milisegundos (2 segundos). Una vez transcurrido ese tiempo, la variable "jackpot" vuelve a "false", ocultando automáticamente el mensaje.
 
+![M](imagenes/millis.jpg)
+![M2](imagenes/millis2.jpg)
+
 Este mecanismo permite generar una respuesta visual temporal que informa claramente al usuario cuando obtiene una combinación ganadora.
 
+![M3](imagenes/millis3.jpg)
 
