@@ -1,4 +1,4 @@
-# Examen Final/Pensamiento Computacional/Sección 1
+# Examen Final/Pensamiento Computacional/Sección 3
 
 ## Tragamonedas Interactivo
 [link a p5js](https://editor.p5js.org/elena.fonseca/sketches/hiqb6PPrx)
